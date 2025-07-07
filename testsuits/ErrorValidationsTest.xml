@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suit">
+
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+    <test thread-count="5" name="Submit Order Test">
+        <classes>
+            <class name = "yuliah.tests.SubmitOrder_refactorTest">
+
+            </class>
+        </classes>
+    </test>
+
+    <test thread-count="5" name = "Error Validations Test">
+        <classes>
+            <class name = "yuliah.tests.ErrorValidationsTest">
+
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
